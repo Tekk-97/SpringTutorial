@@ -1,0 +1,1 @@
+INDEX VERSION 1.134+C:\igini\Personal\Project\hello-spring\.metadata\.plugins\org.eclipse.jdt.core
