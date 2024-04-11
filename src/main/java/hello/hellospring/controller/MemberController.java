@@ -8,6 +8,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
+import java.net.InetAddress;
+import java.net.UnknownHostException;
 import java.util.List;
 
 @Controller
@@ -44,4 +46,18 @@ public class MemberController {
 
         return "members/memberList";
     }
+
+//    @GetMapping("/yourstatus")
+//    public String returnstat(Model model) throws UnknownHostException {
+//        System.out.println(InetAddress.getLocalHost().getHostName());
+//        System.out.println(InetAddress.getLocalHost().getHostAddress());
+//        System.out.println(InetAddress.getLocalHost().getCanonicalHostName());
+//
+//
+//        //List<Member> members = memberService.findMembers();
+//        model.addAttribute("mystat", InetAddress.getLocalHost().getHostName()+"   "+
+//                InetAddress.getLocalHost().getHostAddress()+"   "+ InetAddress.getLocalHost().getCanonicalHostName());
+//
+//        return "home";
+//    }
 }

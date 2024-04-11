@@ -33,7 +33,11 @@ dependencies {
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 
 	implementation 'org.springframework.boot:spring-boot-starter'
-	runtimeOnly 'com.mysql:mysql-connector-j'
+	//runtimeOnly 'mysql:mysql-connector-j'
+	//runtimeOnly 'mysql:mysql-connector-java:8.2.0'
+	//runtimeOnly 'com.mysql:mysql-connector-j'
+	implementation group: 'mysql', name: 'mysql-connector-java', version: '8.0.30'
+
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
